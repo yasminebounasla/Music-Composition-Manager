@@ -1,12 +1,18 @@
 #ifndef HISTORIQUE_H  
 #define HISTORIQUE_H
-#include <time.h>
+
+typedef struct date{
+    int jour;
+    int mois;
+    int annee;
+}date;
 
 typedef struct {
 
-    time_t modification_date;
+    date modification_date;
     int composition_id;
-    char action[10]; // delete, add, edit
+    char composition_name[20];
+    char action[10]; // deleting, adding, editing 
     char modified_field[50]; // name, status,....
     char before_modification[50];
     char after_modification[50];
