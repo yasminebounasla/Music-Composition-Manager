@@ -2,7 +2,7 @@
 #define HISTORIQUE_H
 
 typedef struct date {
-    int day;
+    int jour;
     int mois;
     int annee;
 } date;
