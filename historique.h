@@ -1,13 +1,16 @@
 #ifndef HISTORIQUE_H  
 #define HISTORIQUE_H
 
+
 typedef struct date{
     int jour;
     int mois;
     int annee;
 }date;
 
-typedef struct {
+
+
+typedef struct historique {
 
     date modification_date;
     int composition_id;

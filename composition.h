@@ -2,14 +2,14 @@
 #define COMPOSITION_H
 #include <string.h> 
 
-typedef struct date{
+// struct for the date
+typedef struct date {
     int jour;
-    int mois; 
+    int mois;
     int annee;
-}date;
+} date;
 
-// struct for the composition 
-
+//struct for composition
 typedef struct {
 
     int ID;
