@@ -14,9 +14,30 @@ list_histo cree_historique(list_histo l, composition compo, char action[10], cha
         new->info.composition_id = compo.ID;
         strcpy(new->info.action, action);
         strcpy(new->info.composition_name, compo.name);
-        strcpy(new->info.modified_field ,field);
-        strcpy(new->info.before_modification ,before);
-        strcpy(new->info.after_modification ,after);
+
+        if( strcmp(action, "ajouter") == 0 ) {
+            strcpy(new->info.modified_field , "Aucun");
+            strcpy(new->info.before_modification , "Aucun changement");
+            strcpy(new->info.after_modification , compo.name);
+
+        } else {
+            
+            if(strcmp(action, "supprimer") == 0 ) {
+                strcpy(new->info.modified_field , "Aucun");
+                strcpy(new->info.before_modification , compo.name);
+                strcpy(new->info.after_modification , "Supprimé");
+
+            } else {
+
+                if( strcmp(action, "modifier") == 0 ) {
+                    strcpy(new->info.modified_field , field);
+                    strcpy(new->info.before_modification , before);
+                    strcpy(new->info.after_modification , after);
+                }
+            }
+        }
+
+
         new->info.modification_date.jour = d.jour;
         new->info.modification_date.mois = d.mois;
         new->info.modification_date.annee = d.annee;
