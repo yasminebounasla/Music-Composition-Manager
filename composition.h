@@ -17,7 +17,6 @@ typedef struct {
     char statu[10];
     int property;
     date date_cretion;
-    date modification; 
 
 } composition;
 
