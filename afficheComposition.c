@@ -19,8 +19,6 @@ void afficheComposition(composition* liste){
   
        printf("date de creation : %02d/%02d/%04d\n",p->info.date_cretion.jour,p->info.date_cretion.mois,p->info.date_cretion.annee);
        
-       printf("date de modification : %02d/%02d/%04d\n",p->info.modification.jour,p->info.modification.mois,p->info.modification.annee);
-       
        printf("statut : %s\n",p->info.statu);
 
        printf("priorité : %d\n",p->info.property);
