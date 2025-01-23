@@ -4,7 +4,6 @@
 #include "composition.h"
 #include "listComposition.h"
 
-
 composition compositionID(list_composition l, int ID){
     list_composition p;
 
@@ -199,4 +198,3 @@ int main() {
 
     return 0;
 }
-
