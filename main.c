@@ -124,12 +124,12 @@ int main() {
             printf("cette composition n'exist pas !");
 
             else {
-                printf("le nom de la composition :" , compo_chercher->info.name );
-                printf("\nle ID :" , compo_chercher->info.ID );
-                printf("\nle nom de composer :" , compo_chercher->info.composer);
-                printf("\nthe property :" , compo_chercher->info.property);
-                printf("\nle statu :" , compo_chercher->info.statu);
-                printf("\nla date de creation :" , compo_chercher->info.date_cretion.jour , "/", compo_chercher->info.date_cretion.mois , "/", compo_chercher->info.date_cretion.annee);
+                printf("le nom de la composition : %s\n" , compo_chercher->info.name );
+                printf("le ID : %d\n" , compo_chercher->info.ID );
+                printf("le nom de composer : %s\n" , compo_chercher->info.composer);
+                printf("the property : %d\n" , compo_chercher->info.property);
+                printf("le statu : %s\n" , compo_chercher->info.statu);
+                printf("la date de creation : %d / %d / %d \n" , compo_chercher->info.date_cretion.jour , compo_chercher->info.date_cretion.mois , compo_chercher->info.date_cretion.annee);
             }
         break;
 
