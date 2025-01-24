@@ -1,6 +1,6 @@
 #ifndef LISTCOMPOSITION_H
 #define LISTCOMPOSITION_H
-#include <composition.h>
+#include "composition.h"
 typedef struct cell {
     composition info;
     struct cell *next;
