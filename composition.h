@@ -7,7 +7,7 @@ typedef struct date
   int jour ;
   int mois ;
   int annee ;
-}date;
+}composition_date;
 // struct for the composition 
 typedef struct {
 
@@ -16,7 +16,7 @@ typedef struct {
     char composer[20];
     char statu[10];
     int property;
-    date date_cretion;
+    composition_date date_cretion;
 
 } composition;
 
