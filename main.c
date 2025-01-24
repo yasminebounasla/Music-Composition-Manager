@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h> 
+#include <stdlib.h>
 #include "historique.h"
 #include "composition.h"
 #include "listComposition.h"
@@ -72,10 +73,10 @@ date date_modification(){
 int main() {
 
     int num_compo,i,x, ID_compo, ID_to_edit, ID_to_delet, ID_ajouter;
-    list_composition l, l_after_delet;
+    list_composition l, l_after_delet, compo_chercher;
     char name_compo[20];
     char name_composer[20];
-    composition compo_chercher, compo_modifier, compo_avant_modifier, compo_ajouter, compo_delete;
+    composition compo_modifier, compo_avant_modifier, compo_ajouter, compo_delete;
     list_histo listH;
     date D_modif;
     
@@ -118,6 +119,18 @@ int main() {
         scanf("%s", name_composer);
 
         compo_chercher = recherche_composition(name_compo, name_composer, l);
+
+        if( compo_chercher == NULL){
+            printf("cette composition n'exist pas !");
+
+            else {
+                printf("le nom de la composition :" , compo_chercher->info.name );
+                printf("\nle ID :" , compo_chercher->info.ID );
+                printf("\nle nom de composer :" , compo_chercher->info.composer);
+                printf("\nthe property :" , compo_chercher->info.property);
+                printf("\nle statu :" , compo_chercher->info.statu);
+                printf("\nla date de creation :" , compo_chercher->info.date_cretion.jour , "/", compo_chercher->info.date_cretion.mois , "/", compo_chercher->info.date_cretion.annee);
+            }
         break;
 
     case 3:
