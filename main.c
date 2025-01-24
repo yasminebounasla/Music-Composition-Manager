@@ -86,6 +86,8 @@ int main() {
     printf("Entrez le nombre de compositions que vous souhaitez créer :\n");
     scanf("%d",&num_compo);
 
+    l = NULL;
+
     for( i=1; i<=num_compo; i++){
         ID_ajouter = ajouteComposition(l);
 
