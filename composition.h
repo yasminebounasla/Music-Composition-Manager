@@ -3,11 +3,12 @@
 #include <string.h> 
 
 // struct for the date
-typedef struct date {
+
+typedef struct {
     int jour;
     int mois;
     int annee;
-} date;
+} date ;
 
 //struct for composition
 typedef struct {
