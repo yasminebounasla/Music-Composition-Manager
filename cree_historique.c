@@ -7,7 +7,7 @@
 list_histo cree_historique(list_histo l, composition compo, char action[10], char field[50], char before[50], char after[50], date d){
     list_histo new, p;
 
-    new =(list_histo)malloc(sizeof(cell));
+    new =(list_histo)malloc(sizeof(cell_histo));
 
     
     if (new != NULL){
