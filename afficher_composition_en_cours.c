@@ -6,10 +6,10 @@
 void afficher_composition_en_cours (list_composition list){
     list_composition current = list;
 
-    printf ("Composition en cours: \n");
+    printf ("Composition en_cours: \n");
 
     while (current != NULL){
-        if(strcmp(current->info.statu,"en cours") ==0) {
+        if(strcmp(current->info.statu,"en_cours") ==0) {
             printf ("ID: %d\n",current->info.ID);
             printf ("Nom: %s\n",current->info.name);
             printf ("compositeur: %s\n", current->info.composer);
